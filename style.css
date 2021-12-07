@@ -22,9 +22,11 @@ body:after {
  * ------------------------------------------------------------------------- */
 
 /* Search suggestions */
-#sugget_container {
-  width: 465px !important;
-  margin-left: -1px !important;
+@media (min-width: 1200px) {
+    #sugget_container {
+        width: 465px !important;
+        margin-left: -1px !important;
+    }
 }
 
 #sugget_container .suggest-name a {
