@@ -23,8 +23,8 @@ body:after {
 
 /* Search suggestions */
 #sugget_container {
-  left: 266px !important;
   width: 465px !important;
+  margin-left: -1px !important;
 }
 
 #sugget_container .suggest-name a {
