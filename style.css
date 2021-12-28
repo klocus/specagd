@@ -4,6 +4,7 @@
 
 /* Main colors */
 :root {
+  /*--color-yellow: #fdcc2d;*/
   --color-yellow: #fed700;
   --color-red: #ed1c24;
   --color-black: #000000;
@@ -40,17 +41,22 @@ body:after {
 #header .headerMain__center {
   flex-grow: 1;
 }
+@media (min-width: 991px) {
+  #header .headerMain__center {
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    margin-bottom: 25px;
+  }
+}
 
 #header .headerContact__text.headerContact__text--big {
 	font-size: 12px;
 }
 
 /* Search box */
-@media (min-width: 991px) {
-  #header .headerMain__center {
-    height: auto;
-    margin-bottom: 25px;
-  }
+#header .box.rc-header-search-normal {
+  border: 0;
 }
 #header .headerSearcher {
   width: 100%;
@@ -64,6 +70,7 @@ body:after {
 }
 #header .headerSearcher__button {
   width: 50px;
+  border-left: 0;
   background-color: var(--color-red);
 }
 
