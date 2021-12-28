@@ -4,10 +4,17 @@
 
 /* Main colors */
 :root {
-  --color-yellow: #fdcc2d;
+  --color-yellow: #fed700;
   --color-red: #ed1c24;
   --color-black: #000000;
   --color-white: #ffffff;
+}
+
+body {
+  background: var(--color-yellow);
+  background: -moz-linear-gradient(top,var(--color-yellow) 367px,#fff 367px);
+  background: -webkit-linear-gradient(top,var(--color-yellow) 367px,#fff 367px);
+  background: linear-gradient(to bottom,var(--color-yellow) 367px,#fff 367px);
 }
 
 /* Remove background form top of body */
@@ -84,6 +91,14 @@ body:after {
 #sugget_container .suggest-name a {
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+/**
+ * MENU
+ * ------------------------------------------------------------------------- */
+
+#top_menu .categories-button > a {
+  background-color: var(--color-yellow);
 }
 
 /**
@@ -192,3 +207,10 @@ body:after {
 .box.rc-box-filter-search .box-simple {
 	border: 1px solid #e6e6e6;
 }
+
+/**
+ * FOOTER
+ * ------------------------------------------------------------------------- */
+ .footerBottom {
+   background-color: var(--color-yellow);
+ }
