@@ -122,7 +122,8 @@ body:after {
  * SIDEBAR
  * ------------------------------------------------------------------------- */
 
-.rc-page-start aside#side {
+.rc-page-start aside#side,
+.rc-page-start #content {
   margin-top: 16px;
 }
 
@@ -198,16 +199,34 @@ aside#side .advantages__content {
 }
 
 /**
- * CAROUSEL
+ * SLIDER
  * ------------------------------------------------------------------------- */
 
-.owl-prev:before,
-.owl-next:before,
-.slick-prev:before,
-.slick-next:before,
-#img_Prev i,
-#img_Next i {
+.homeSlider {
+  align-items: stretch;
+}
+
+.homeSlider .owl-carousel .owl-wrapper-outer {
+  padding-top: 0;
+}
+
+.homeSlider .owl-prev:before,
+.homeSlider .owl-next:before,
+.homeSlider .slick-prev:before,
+.homeSlider .slick-next:before,
+.homeSlider #img_Prev i,
+.homeSlider #img_Next i {
 	color: var(--color-red);
+}
+
+
+.homeSlider .homeAdditionalBoxes {
+  justify-content: space-between;
+}
+
+.homeSlider .homeAdditionalBoxes .textBox,
+.homeSlider .homeAdditionalBoxes .photoBox {
+  height: calc(50% - 8px);
 }
 
 .view_stock_info_text_ok {
