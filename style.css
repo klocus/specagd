@@ -1,14 +1,14 @@
 /**
  * GENERAL
  * ------------------------------------------------------------------------- */
-
-/* Main colors */
 :root {
   /*--color-yellow: #fdcc2d;*/
   --color-yellow: #fed700;
   --color-red: #ed1c24;
   --color-black: #000000;
   --color-white: #ffffff;
+
+  --border-radius: 5px;
 }
 
 body {
@@ -57,6 +57,7 @@ body:after {
 /* Search box */
 #header .box.rc-header-search-normal {
   border: 0;
+  border-radius: var(--border-radius);
 }
 #header .headerSearcher {
   width: 100%;
@@ -71,6 +72,7 @@ body:after {
 #header .headerSearcher__button {
   width: 50px;
   border-left: 0;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
   background-color: var(--color-red);
 }
 
@@ -119,16 +121,30 @@ body:after {
 /**
  * SIDEBAR
  * ------------------------------------------------------------------------- */
- 
-#side .box-body {
+
+.rc-page-start aside#side {
+  margin-top: 16px;
+}
+
+.rc-box-categories-more .categories-tree ul,
+.rc-box-categories .categories-tree ul,
+.classic-categories-tree ul {
+  border-radius: var(--border-radius);
+  border: 2px solid var(--color-yellow);
+}
+
+.rc-box-categories .categories-tree li:hover::before,
+.rc-box-categories-more .categories-tree li:hover::before {
+  display: none;
+}
+
+aside#side .box-body {
   background-color: var(--color-white);
 }
-
-#side .box-body.categories-tree a {
+aside#side .box-body.categories-tree a {
 	transition: .3s !important; 
 }
-
-#side .advantages__content {
+aside#side .advantages__content {
   flex-wrap: wrap;
   padding: 20px 15px;
   background-color: var(--color-white);
@@ -226,6 +242,6 @@ body:after {
 /**
  * FOOTER
  * ------------------------------------------------------------------------- */
- .footerBottom {
-   background-color: var(--color-yellow);
- }
+.footerBottom {
+  background-color: var(--color-yellow);
+}
