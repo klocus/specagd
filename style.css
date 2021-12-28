@@ -93,7 +93,7 @@ body:after {
 /* User icon */
 #header .headerAccount,
 #header .headerCart {
-  padding-top: 22px;
+  padding-top: 20px;
 }
 #header .headerAccount #user-o {
   fill: var(--color-black) !important;
