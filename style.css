@@ -26,22 +26,12 @@ body:after {
 }
 
 #header .headerMain__left,
-#header .headerMain__center,
 #header .headerMain__right {
   flex-shrink: 0;
 }
 
 #header .headerContact__text.headerContact__text--big {
 	font-size: 12px;
-}
-
-/* Hide settings icon */
-#header .headerSettings {
-	display: none;
-}
-
-#header .headerAccount #user-o {
-  fill: var(--color-black);
 }
 
 /* Search box */
@@ -51,19 +41,38 @@ body:after {
     margin-bottom: 25px;
   }
 }
-.headerSearcher {
+#header .headerSearcher {
   width: 100%;
   min-width: unset;
 }
-.headerSearcher__inputWrapper {
+#header .headerSearcher__inputWrapper {
   width: calc(100% - 180px - 50px);
 }
-.headerSearcher .headerSearcher__categoriesWrapper {
+#header .headerSearcher .headerSearcher__categoriesWrapper {
   width: 180px;
 }
-.headerSearcher__button {
+#header .headerSearcher__button {
   width: 50px;
   background-color: var(--color-red);
+}
+
+/* Wishlist & Products compare */
+#header .headerMain__rightTop {
+  display: none;
+}
+
+/* Settings icon */
+#header .headerSettings {
+	display: none;
+}
+
+/* User icon */
+#header .headerAccount,
+#header .headerCart {
+  padding-top: 22px;
+}
+#header .headerAccount #user-o {
+  fill: var(--color-black) !important;
 }
 
 /* Search suggestions */
