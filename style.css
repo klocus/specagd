@@ -29,12 +29,16 @@ body:after {
  * ------------------------------------------------------------------------- */
 
 #header .headerMain {
-  gap: 24px;
+  gap: 32px;
 }
 
 #header .headerMain__left,
 #header .headerMain__right {
   flex-shrink: 0;
+  width: auto;
+}
+#header .headerMain__center {
+  flex-grow: 1;
 }
 
 #header .headerContact__text.headerContact__text--big {
@@ -66,6 +70,10 @@ body:after {
 /* Wishlist & Products compare */
 #header .headerMain__rightTop {
   display: none;
+}
+
+#header .headerMain__rightBottom {
+  gap: 32px;
 }
 
 /* Settings icon */
