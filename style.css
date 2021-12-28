@@ -21,6 +21,16 @@ body:after {
  * HEADER
  * ------------------------------------------------------------------------- */
 
+#header .headerMain {
+  gap: 24px;
+}
+
+#header .headerMain__left,
+#header .headerMain__center,
+#header .headerMain__right {
+  flex-shrink: 0;
+}
+
 #header .headerContact__text.headerContact__text--big {
 	font-size: 12px;
 }
@@ -30,18 +40,35 @@ body:after {
 	display: none;
 }
 
+#header .headerAccount #user-o {
+  fill: var(--color-black);
+}
+
+/* Search box */
 @media (min-width: 991px) {
   #header .headerMain__center {
     height: auto;
     margin-bottom: 25px;
-    padding-left: 16px;
   }
+}
+.headerSearcher {
+  width: 100%;
+  min-width: unset;
+}
+.headerSearcher__inputWrapper {
+  width: calc(100% - 180px - 50px);
+}
+.headerSearcher .headerSearcher__categoriesWrapper {
+  width: 180px;
+}
+.headerSearcher__button {
+  width: 50px;
+  background-color: var(--color-red);
 }
 
 /* Search suggestions */
 @media (min-width: 1200px) {
     #sugget_container {
-        width: 465px !important;
         margin-left: -1px !important;
     }
 }
